@@ -11,7 +11,6 @@ import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -109,7 +108,7 @@ fun PantallaCliente(viewModel: ClienteViewModel = hiltViewModel()) {
                     value = viewModel.direccion,
                     onValueChange = { viewModel.direccion = it },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text(text = "Direccion") },
+                    label = { Text(text = "Dirección") },
                     singleLine = true
                 )
                 OutlinedTextField(
@@ -122,7 +121,7 @@ fun PantallaCliente(viewModel: ClienteViewModel = hiltViewModel()) {
 
                     },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text(text = "Limite de credito") },
+                    label = { Text(text = "Límite de crédito") },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions.Default.copy(
                         keyboardType = KeyboardType.Number

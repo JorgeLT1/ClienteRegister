@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RegisterWithApi</string>
+
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="settings">Settings</string>
+
+
 </resources>

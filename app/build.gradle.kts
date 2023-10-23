@@ -86,4 +86,6 @@ dependencies {
     implementation("com.squareup.moshi:moshi-kotlin:1.13.0")
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    implementation("androidx.navigation:navigation-compose:2.6.0")
+    implementation("androidx.compose.material:material-icons-extended")
 }
