@@ -60,7 +60,7 @@ fun PantallaCliente(viewModel: ClienteViewModel = hiltViewModel()) {
             .fillMaxSize(),
         topBar = {
             TopAppBar(
-                title = { Text(text = "Personas") },
+                title = { Text(text = "Registro cliente") },
                 actions = {
                     IconButton(onClick = {
                         viewModel.nombres = ""
@@ -90,10 +90,7 @@ fun PantallaCliente(viewModel: ClienteViewModel = hiltViewModel()) {
                     .fillMaxWidth()
                     .padding(8.dp)
             ) {
-                Text(
-                    text = "personas detalles", style =
-                    MaterialTheme.typography.titleMedium
-                )
+
                 OutlinedTextField(
                     value = viewModel.nombres,
                     onValueChange = { viewModel.nombres = it },
@@ -122,7 +119,9 @@ fun PantallaCliente(viewModel: ClienteViewModel = hiltViewModel()) {
                         if (newValue != null) {
                             viewModel.limiteCredito = newValue
                         }
+
                     },
+                    modifier = Modifier.fillMaxWidth(),
                     label = { Text(text = "Limite de credito") },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions.Default.copy(
